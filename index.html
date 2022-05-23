@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+
+    <section class="container">
+      <h2>
+        <p>Question 1: Coding + Complexity</p>
+      </h1>
+    </section>
+
+    <section class="container">
+      <form>
+        <label >Array:</label>
+        <br />
+        <input
+          type="text"
+          id="array"
+          name="array"
+          value="red, blue, red, green, blue"
+        />
+        <br />
+        <label ><small class="text-muted">Format Example: red, blue, green</small></label>
+        <br />
+
+        <label  class="mt-2">Order:</label>
+        <br />
+        <input
+          type="text"
+          id="sortby"
+          name="sortby"
+          value="blue, red, black"
+        />
+        <br />
+        <label ><small class="text-muted">Format Example: red, blue, green</small></label>
+        <br />
+
+        <button type="button" class="my-2 btn btn-primary btn-sm" onClick="getSortedArray()">Sort!</button>
+      </form>
+    </section>
+
+    <section class="container my-2 ">
+      <div id="display-result" class="d-none">
+        <h3>Result:</h3>
+      <p class="alert alert-secondary" id="result" ></p>
+      <p>
+        The time complexity of this algorithm is O(n^2), due to the nested for
+        loops the function is using. The space complexity for this algorithm is
+        O(n) since we are storing and building upon the temporary array as we
+        loop through the 2 provided arrays.
+      </p>
+      <p>
+        Other Thoughts: This is the first way to solve the problem that came to
+        mind. It seems the most simple but will cost the most in time and space
+        as the array to sort gets larger.
+      </p>
+      <p>
+        After researching Big O notation more and watching a few videos, it
+        seems using a function that works similarly to Quicksort may return
+        faster results with larger data sets.
+      </p>
+      </div> 
+    </section>
+
+    <script type="text/javascript" src="./index.js"></script>
+  </body>
+</html>
