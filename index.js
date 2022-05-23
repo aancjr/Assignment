@@ -2,18 +2,24 @@
 
 function sortArray(items, order) {
 
+    //empty array to store sorted elements
     let tempArray = [];
 
+    //start with the order array to get the first element that we should be matching against
     for (let i = 0; i <= order.length; i++) {
+        //loop through the items array to begin matching
         for (let j = 0; j <= items.length; j++) {
 
+            //making sure we skip elements that do not exist due to size difference in array
             if (items[j] !== undefined && order[i] !== undefined && items[j] === order[i]) {
+                //and when the item element and order element match, push those to the temp array
                 tempArray.push(items[j])
             }
 
         };
     };
 
+    //result
     return tempArray;
 
 
