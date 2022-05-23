@@ -71,6 +71,11 @@
         seems using a function that works similarly to Quicksort may return
         faster results with larger data sets.
       </p>
+        
+       <p>
+         In my current role, I recently had to implement this type of solution to have a returned set of data (months of the year with fiscal revenue) reflect the fiscal year pattern vs. calendar year. To do so, I used the JavaScript .sort() function and compared a and b by using .indexOf().
+         Example: monthRevenueData.sort((a, b) => fyMonthOrder.indexOf(a.name) - fyMonthOrder.indexOf(b.name))
+        </p>
       </div> 
     </section>
 
